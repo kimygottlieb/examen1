@@ -1,18 +1,7 @@
-/*
-
-Things to remember:
-
-1. Always use proper indentation in your css and html
-2. An "#" selector or 'id' will override a '.' selector or 'class'
-3. A '.' selector will override a native selector, like 'div'
-
-*/
-
-
-/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+@import "bootstrap";
 
 body {
+	padding-top: 25px;
 	background-image: url(bg.jpg);
 	background-repeat: no-repeat;
 	background-color: #1A1B1F;
@@ -69,14 +58,12 @@ body {
 /* PAGE STRUCTURE */
 #page-container {
 	padding: 54px 14px 15px;
-	margin: 0 auto;
-	width: 837px;
 }
+
 #main {
-	float: right;
-	width: 522px;
 	background-color: white;
 	border-radius: 6px;
+	margin-left: 12px;
 }
 	#main h2 {
 		font-size: 18px;
@@ -88,8 +75,6 @@ body {
 #dashboard {
 	border-radius: 6px;
 	background-color: white;
-	float: left;
-	width: 302px;
 }
 	/* Profile */
 	#profile-summary, #tweet-content {
@@ -97,7 +82,7 @@ body {
 	}
 		#profile-summary .avatar {
 			position: absolute;
-			top: 0;.twe
+			top: 0;
 			left: 0;
 		}
 		#profile-summary .content {
@@ -260,11 +245,5 @@ body {
 			}
 
 .logo{
-	margin: 10px;
-}
-
-.logo-container{
-	width: 100%;
-	background: #33BCEF;
-	opacity: 0.7;
+	max-height: 25px;
 }
