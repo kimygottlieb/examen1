@@ -1,4 +1,5 @@
 @import "bootstrap";
+@import "font-awesome";
 
 body {
 	padding-top: 25px;
@@ -246,4 +247,14 @@ body {
 
 .logo{
 	max-height: 25px;
+}
+
+footer{
+	color: #fff;
+	text-align: center;
+}
+
+footer a:hover{
+	text-decoration: none;
+	color: #fff;
 }
