@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'maps/index'
+
   devise_for :users
   resources :messages do
 	  resources :comments

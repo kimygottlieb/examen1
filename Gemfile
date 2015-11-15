@@ -42,3 +42,5 @@ gem 'devise'
 
 gem 'bootstrap-sass'
 gem "font-awesome-rails"
+gem 'gmaps-rails'
+gem 'jquery-rails'

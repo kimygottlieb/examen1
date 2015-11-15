@@ -1,0 +1,11 @@
+<h1>Maps</h1>
+<div sytle='width: 800px'>
+    <%= map_div @map, style: 'width: 800px; height: 400px' %>
+</div>
+<% content_for :script do %>
+	<script>
+	  jQuery(function() {
+		<%= @map.to_js %>
+	  })
+	</script>
+<% end %>
