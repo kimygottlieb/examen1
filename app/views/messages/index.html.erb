@@ -36,3 +36,10 @@
 						</div>
 					</div><!-- .tweet -->
 <% end %>
+<% content_for :composetweet do %>
+	<textarea class="tweet-compose" placeholder="Compose new Tweet..."/></textarea>
+	<div id="tweet-controls">
+		<div id="char-count">140</div>
+		<%= link_to "Tweet", { :controller => :messages, :action => :new }, :class => 'button', :id => 'tweet-submit'  %> 
+	</div>
+<% end %>
